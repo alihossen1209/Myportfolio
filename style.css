@@ -1,0 +1,381 @@
+:root {
+  --orange_Color: orange;
+  --button_Hover_Color: rgb(212, 80, 32);
+  --grey_color: #57606f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--grey_color);
+}
+
+/* ====== HEADER STYLING ====== */
+header {
+  background-color: #1e272e;
+  color: white;
+  padding: 18px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+}
+
+.header_container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--orange_Color);
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu_icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--orange_Color);
+}
+
+nav button {
+  padding: 8px 10px;
+  background-color: var(--orange_Color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background-color: var(--button_Hover_Color);
+}
+
+/* ===== HERO SECTION ====== */
+
+.hero {
+  background-color: #f1f2f6;
+  padding: 60px 20px;
+}
+
+.hero_container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero_text {
+  flex: 1;  
+  min-width: 280px;
+  padding: 20px;
+}
+
+.hero_text h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero_text h1 span {
+  color: var(--orange_Color);
+}
+
+.hero_text h2 {
+  font-size: 24px;
+  color: #2f3542;
+}
+
+.hero_text p {
+  font-size: 16px;
+  color: var(--grey_color);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.hero_text button {
+  background-color: var(--orange_Color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero_text button:hover {
+  background-color: var(--button_Hover_Color);
+}
+
+.hero_img {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero_img img {
+  width: 200px;
+  height: auto;
+  border-radius: 50px;
+}
+
+/* ====== About Section Styling ======== */
+
+.about {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.about_container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about_container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2f3542;
+  text-align: center;
+}
+
+.about_container p {
+  color: var(--grey_color);
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.about_container h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #2f3542;
+  text-align: center;
+}
+
+.about_container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.about_container ul li {
+  background-color: #f1f2f6;
+  color: #444;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.about_container ul li:hover {
+  background-color: var(--orange_Color);
+  color: white;
+}
+
+/* ======== Projects Section Styling ======== */
+.projects {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.projects_container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.projects_container h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2f3542;
+}
+
+.projects_grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.projects_card {
+  width: 300px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.projects_card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.projects_card .text_area {
+  padding: 20px;
+}
+
+.projects_card .text_area h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2f3542;
+}
+
+.projects_card .text_area p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.projects_card .text_area button {
+  background-color: var(--orange_Color);
+  padding: 8px 12px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.projects_card .text_area button:hover {
+  background-color: var(--button_Hover_Color);
+}
+
+/* ===== Contact Form Styling ======== */
+.contact_form {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.contact_form_container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact_form_container h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #2f3542;
+  margin-bottom: 15px;
+}
+
+.contact_form_container p {
+  text-align: center;
+  margin-bottom: 30px;
+  columns: var(--grey_color);
+}
+
+.contact_form_container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact_form_container form input, 
+.contact_form_containerform textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact_form_container form button {
+  padding: 12px;
+  background-color: var(--orange_Color);
+  border-radius: 6px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact_form_container form button:hover {
+  background-color: var(--button_Hover_Color);
+}
+
+/* ==== Footer Section ===== */
+
+footer {
+  background-color: #1e272e;
+  padding: 30px 20px;
+}
+
+.footer_container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.copy_right_text {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer_container .social_icon a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.footer_container .social_icon a:hover {
+  color: orange;
+}

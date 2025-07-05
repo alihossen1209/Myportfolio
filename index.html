@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Font Awesome Cdn Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Css Link -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Responsive Css Link -->
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <!-- ====== HEADER SECTION ======== -->
+  <header>
+    <div class="header_container">
+      <div class="logo">Ali</div>
+
+    <div class="menu_icon">
+      <i class="fa-solid fa-bars" onclick="toggle_Menu()"></i>
+    </div>
+
+    <nav id="menu_bar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+      <button class="contact_btn" type="submit">Hire Me</button>
+    </nav>
+    </div>
+  </header>
+
+  <!-- ==== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero_container">
+      <div class="hero_text">
+        <h1>Hellow, I am <span>Ali</span></h1>
+        <h2>Frontend Web Devoloper.</h2>
+        <p>I design and build responsive websites with clean code and modern design.</p>
+        <button>View Projects</button>
+      </div>
+      <div class="hero_img">
+        <img src="IMG/IMG FOR SERO SECTION.jpg " alt="Hero Section Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== About Section ======= -->
+  <section class="about" id="about">
+    <div class="about_container">
+      <h2>About Me</h2>
+      <p>Hello! I’m <strong>Ali</strong>, a passionate Frontend Web Developer who loves turning ideas into real websites. I specialize in building responsive, user-friendly, and modern websites using HTML, CSS, and JavaScript.</p>
+
+      <h3>My Skills:</h3>
+      <ul>
+        <li><i class="fa-solid fa-circle-check"></i>HTML5</li>
+        <li><i class="fa-solid fa-circle-check"></i>CSS3</li>
+        <li><i class="fa-solid fa-circle-check"></i>Responsive Design</li>
+        <li><i class="fa-solid fa-circle-check"></i>JavaScript (Basics)</li>
+      </ul>
+    </div>
+  </section> 
+
+  <!-- ====== Projects Secton ======= -->
+   <section class="projects" id="projects">
+      <div class="projects_container">
+          <h2>My Projects</h2>
+        <div class="projects_grid">
+          <div class="projects_card">
+          <img src="IMG/codimg.avif" alt="projects image">
+          <div class="text_area">
+            <h3>Portfolio Website</h3>
+            <p>A simple and responsive personal portfolio homepage using HTML and CSS.</p>
+            <button class="view_btn">View</button>
+          </div>
+        </div>
+
+        <div class="projects_card">
+          <img src="IMG/codimg.avif" alt="projects image">
+          <div class="text_area">
+            <h3>Pricing Page</h3>
+            <p>A clean pricing section layout with cards and mobile responsiveness.</p>
+            <button class="view_btn">View</button>
+          </div>
+        </div>
+
+        <div class="projects_card">
+          <img src="IMG/codimg.avif" alt="projects image">
+          <div class="text_area">
+            <h3>Footer Design</h3>
+            <p>Modern footer with links, newsletter form, and social icons.</p>
+            <button class="view_btn">View</button>
+          </div>
+        </div>
+        </div>
+      </div>
+   </section>
+
+  <!-- ====== Contact Section  ======= -->
+   <section class="contact_form" id="contact_form">
+      <div class="contact_form_container">
+        <h2>Conact Me</h2>
+        <p>If you have any questions or opportunities, feel free to send a message! </p>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="6" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  
+  <!-- ====== Footer Section ====== -->
+   <footer>
+    <div class="footer_container">
+      <div class="copy_right_text">
+        &copy; Ali 2025. All Right Reserved.
+      </div>
+      <div class="social_icon">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+   </footer>
+
+<!-- ==== Javascript Script ===== -->
+  <script>
+    function toggle_Menu() {
+      document.getElementById("menu_bar").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
